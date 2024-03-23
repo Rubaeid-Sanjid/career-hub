@@ -1,11 +1,15 @@
-
+import Banner from "../Banner/Banner";
+import FeaturedJobs from "../Featured Jobs/FeaturedJobs";
+import JobCategory from "../Job Category/JobCategory";
 
 const Home = () => {
-    return (
-        <div>
-            <h2 className='text-5xl'>This is home</h2>
-        </div>
-    );
+  return (
+    <>
+      <Banner></Banner>
+      <JobCategory></JobCategory>
+      <FeaturedJobs></FeaturedJobs>
+    </>
+  );
 };
 
 export default Home;
