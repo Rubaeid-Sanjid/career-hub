@@ -9,12 +9,34 @@ import {
 } from "react-router-dom";
 import Root from './components/Root/Root.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
+import Home from './components/Home/Home.jsx';
+import Statistics from './components/Statistics/Statistics.jsx';
+import ApliedJobs from './components/Jobs/ApliedJobs.jsx';
+import Blogs from './components/Blogs/Blogs.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    errorElement: <ErrorPage></ErrorPage>
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>
+      },
+      {
+        path: "/statistics",
+        element: <Statistics></Statistics>
+      },
+      {
+        path: "/jobs",
+        element: <ApliedJobs></ApliedJobs>
+      },
+      {
+        path: "/blogs",
+        element: <Blogs></Blogs>
+      },
+    ]
   },
 ]);
 
