@@ -1,6 +1,5 @@
 const Banner = () => {
   return (
-    <div className="container mx-auto px-24">
       <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
@@ -18,7 +17,6 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

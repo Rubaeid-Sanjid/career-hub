@@ -9,7 +9,7 @@ const FeaturedJobs = () => {
   }, []);
 
   return (
-    <div className="mb-10 container mx-auto p-24">
+    <div className="mb-10">
       <div>
         <h2 className="text-5xl text-center">Featured Jobs</h2>
         <p className="mt-5 text-center">
@@ -17,7 +17,7 @@ const FeaturedJobs = () => {
           need. Its your future
         </p>
       </div>
-      <div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {
             jobs.map(job => <Job key={job.id} job={job}></Job>)
         }
